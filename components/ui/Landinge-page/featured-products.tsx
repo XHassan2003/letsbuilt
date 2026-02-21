@@ -1,3 +1,4 @@
+"use cache";
 import { StarIcon, ArrowUpRightIcon } from "lucide-react";
 import SectionHeader from "../common/section-header";
 import { Button } from "@/components/ui/button";
