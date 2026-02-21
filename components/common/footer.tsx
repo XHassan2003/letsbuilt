@@ -1,6 +1,6 @@
 import { NotebookTabsIcon, SparklesIcon } from "lucide-react";
 import Link from "next/link";
-import { Button } from "../button";
+import { Button } from "@/components/ui/button";
 export default function Footer() {
   return (
     <footer className="relative border-t bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">

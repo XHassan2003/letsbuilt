@@ -1,6 +1,6 @@
-import FeaturedProducts from "@/components/ui/Landinge-page/featured-products";
-import HeroSection from "@/components/ui/Landinge-page/hero-section";
-import RecentProducts from "@/components/ui/Landinge-page/recent-products";
+import FeaturedProducts from "@/components/Landinge-page/featured-products";
+import HeroSection from "@/components/Landinge-page/hero-section";
+import RecentProducts from "@/components/Landinge-page/recent-products";
 import { LoaderIcon } from "lucide-react";
 import { Suspense } from "react";
 

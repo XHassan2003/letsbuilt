@@ -7,7 +7,7 @@ import {
   CardDescription,
   CardContent,
   CardFooter,
-} from "../card";
+} from "@/components/ui/card";
 import Link from "next/link";
 import { ChevronDownIcon, ChevronUpIcon, StarIcon } from "lucide-react";
 import { cn } from "@/lib/utils";

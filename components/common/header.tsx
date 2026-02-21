@@ -7,7 +7,7 @@ import {
   UserIcon,
 } from "lucide-react";
 import Link from "next/link";
-import { Button } from "../button";
+import { Button } from "@/components/ui/button";
 import {
   SignedIn,
   SignedOut,
