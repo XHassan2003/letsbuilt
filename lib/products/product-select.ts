@@ -14,11 +14,12 @@ export async function getFeaturedProducts() {
 }
 
 export async function getAllProducts() {
+  "use cache";
   const productsData = await db
     .select()
     .from(products)
-    .where(eq(products.status, "approved"))
     .orderBy(desc(products.voteCount));
+
   return productsData;
 }
 

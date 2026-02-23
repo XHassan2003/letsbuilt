@@ -51,7 +51,7 @@ export default function VotingButtons({
         className={cn(
           "h-8 w-8 text-primary",
           hasVoted
-            ? "hover:bg-primary/10 text-primary hover:bg-primary/20"
+            ? "hover:bg-primary/10 text-primary"
             : "hover:bg-primary/10 hover:text-primary",
         )}
         disabled={isPendding}

@@ -13,7 +13,7 @@ export default function ProductSkeleton() {
         </div>
         <div className="grid-wrapper">
           {Array.from({ length: 6 }).map((_, index) => (
-            <div key={index} className="border rounded-lg p-6 min-h-[200px]">
+            <div key={index} className="border rounded-lg p-6 min-h-50">
               <div className="flex items-start gap-4 mb-4">
                 <div className="flex-1">
                   <Skeleton className="h-6 w-3/4 mb-2" />

@@ -9,17 +9,15 @@ import {
 } from "@/components/ui/card";
 import Link from "next/link";
 import { StarIcon } from "lucide-react";
-import { InferSelectModel } from "drizzle-orm";
-import { products } from "@/db/schema";
 import VotingButtons from "@/components/products/voting-buttons";
+import { ProductType } from "@/types";
 
-type Product = InferSelectModel<typeof products>;
 
-export default function ProductCard({ product }: { product: Product }) {
+export default function ProductCard({ product }: { product: ProductType }) {
   const hasVoted = false;
   return (
     <Link href={`/products/${product.slug}`}>
-      <Card className="group card-hover hover:bg-primary-foreground/10 border-solid border-gray-400 min-h-[200px]">
+      <Card className="group card-hover hover:bg-primary-foreground/10 border-solid border-gray-400 min-h-50">
         <CardHeader className="flex-1">
           <div className="flex items-start gap-4">
             <div className="flex-1 min-w-0">
