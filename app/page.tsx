@@ -10,11 +10,7 @@ export default function Home() {
       <HeroSection />
 
       <FeaturedProducts />
-      <Suspense
-        fallback={
-          <ProductSkeleton />
-        }
-      >
+      <Suspense fallback={<ProductSkeleton />}>
         <RecentProducts />
       </Suspense>
     </div>

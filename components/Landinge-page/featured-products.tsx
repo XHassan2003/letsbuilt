@@ -6,25 +6,6 @@ import Link from "next/link";
 import ProductCard from "../products/product-card";
 import { getFeaturedProducts } from "@/lib/products/product-select";
 
-// const featuredProducts = [
-//   {
-//     id: 1,
-//     name: "ParityKit",
-//     description: "A toolkit for building decentralized applications",
-//     tags: ["Saas", "Pricing", "Global"],
-//     votes: 200,
-//     isFeatured: true,
-//   },
-//   {
-//     id: 2,
-//     name: "Full Stack Next.js Course",
-//     description: "A comprehensive course for building full stack applications",
-//     tags: ["Next.js", "TailwindCSS", "Full Stack"],
-//     votes: 100,
-//     isFeatured: false,
-//   },
-// ];
-
 export default async function FeaturedProducts() {
   const featuredProducts = await getFeaturedProducts();
   return (
