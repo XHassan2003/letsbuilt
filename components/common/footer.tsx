@@ -1,12 +1,13 @@
 import { NotebookTabsIcon, SparklesIcon } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+
 export default function Footer() {
   return (
-    <footer className="relative border-t bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
+    <footer className="relative border-t bg-background/95 backdrop-blur">
       
       {/* Top section */}
-      <div className="wrapper py-16 grid gap-12 md:grid-cols-4">
+      <div className="wrapper py-12 md:py-16 grid gap-10 sm:grid-cols-2 md:grid-cols-4">
         
         {/* Brand */}
         <div className="space-y-4">
@@ -19,7 +20,7 @@ export default function Footer() {
             </span>
           </div>
 
-          <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
+          <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
             A community where developers share projects, discover ideas, and
             build the future together.
           </p>
@@ -30,19 +31,19 @@ export default function Footer() {
           <h3 className="text-sm font-semibold">Explore</h3>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li>
-              <a href="/explore" className="hover:text-foreground transition">
+              <Link href="/explore" className="hover:text-foreground transition">
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-foreground transition">
+              <Link href="#" className="hover:text-foreground transition">
                 Categories
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-foreground transition">
+              <Link href="#" className="hover:text-foreground transition">
                 Trending
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -52,59 +53,57 @@ export default function Footer() {
           <h3 className="text-sm font-semibold">Company</h3>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li>
-              <a href="#" className="hover:text-foreground transition">
+              <Link href="#" className="hover:text-foreground transition">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-foreground transition">
+              <Link href="#" className="hover:text-foreground transition">
                 Contact
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-foreground transition">
+              <Link href="#" className="hover:text-foreground transition">
                 Careers
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
 
-        {/* CTA (matches hero buttons) */}
+        {/* CTA */}
         <div className="space-y-4">
           <h3 className="text-sm font-semibold">Start Building</h3>
           <p className="text-sm text-muted-foreground">
             Got something awesome? Share it with the community
           </p>
 
-          <div className="flex items-center gap-3">
-            <Button asChild size="sm" className="text-base px-5 shadow-lg">
-              <Link href="/submit">
-                <SparklesIcon />
-                Share Your Project
-              </Link>
-            </Button>
-          </div>
+          <Button asChild size="sm" className="w-full sm:w-auto shadow-md">
+            <Link href="/submit">
+              <SparklesIcon className="size-4" />
+              Share Your Project
+            </Link>
+          </Button>
         </div>
       </div>
 
       {/* Bottom bar */}
       <div className="border-t">
-        <div className="wrapper py-6 flex flex-col gap-3 md:flex-row md:items-center md:justify-between text-sm text-muted-foreground">
+        <div className="wrapper py-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between text-sm text-muted-foreground">
           
-          <p>
+          <p className="text-center md:text-left">
             © 2026 LetsBuilt. All rights reserved.
           </p>
 
-          <div className="flex items-center gap-5">
-            <a href="#" className="hover:text-foreground transition">
+          <div className="flex justify-center md:justify-end items-center gap-5 flex-wrap">
+            <Link href="#" className="hover:text-foreground transition">
               Privacy
-            </a>
-            <a href="#" className="hover:text-foreground transition">
+            </Link>
+            <Link href="#" className="hover:text-foreground transition">
               Terms
-            </a>
-            <a href="#" className="hover:text-foreground transition">
+            </Link>
+            <Link href="#" className="hover:text-foreground transition">
               Twitter
-            </a>
+            </Link>
           </div>
 
         </div>
